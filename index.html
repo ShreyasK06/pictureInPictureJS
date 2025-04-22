@@ -5,20 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PICTURE-IN-PICTURE</title>
+    <title>Picture-in-Picture</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=https://www.samsung.com/us/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1><a href="https://shreyask06.github.io/MyWebsite"> PICTURE-IN-PICTURE </a></h1>
-    <video id="video" controls height="360" width="640" hidden></video>
-    <div class="button-container">
-        <button id="button">START</button>
-    </div>
+    <header>
+        <h1><a href="https://shreyask06.github.io/MyWebsite">Picture-in-Picture</a></h1>
+    </header>
+
+    <main>
+        <div class="app-container">
+            <div class="description">
+                <p>Share your screen and watch it in a floating window while you work on other tasks.</p>
+            </div>
+
+            <video id="video" controls height="360" width="640" hidden></video>
+
+            <div class="status-message" id="status-message">Ready to start</div>
+
+            <div class="button-container">
+                <button id="select-button" class="btn"><i class="fas fa-desktop"></i> Select Screen</button>
+                <button id="start-button" class="btn" disabled><i class="fas fa-play"></i> Start PiP</button>
+            </div>
+        </div>
+    </main>
+
+
+
     <script src="script.js"></script>
 </body>
 
